@@ -1,11 +1,13 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace minimal_api.Models
+namespace minimal_api.Dtos
 {
-    public class Command
+    public class CommandUpdateDto
     {
-        [Key]
-        public int Id { get; set; }
         [Required]
         public string? Howto { get; set; }
         [Required]
@@ -15,4 +17,3 @@ namespace minimal_api.Models
         public string? CommandLine { get; set; }
     }
 }
-
