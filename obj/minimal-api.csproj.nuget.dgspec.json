@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj": {}
+    "C:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj": {
+    "C:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj",
+        "projectUniqueName": "C:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj",
         "projectName": "minimal-api",
-        "projectPath": "c:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj",
+        "projectPath": "C:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj",
         "packagesPath": "C:\\Users\\diogo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\obj\\",
+        "outputPath": "C:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JYzefqh6XUCO0hKPu2IqO7sWA/5SzpyQvQtUNt7LaHCm2yvVVjiewc2xWTR8b7oqbz3OCpqv/38XHgow3l+90w==",
+  "dgSpecHash": "nfJYA2h+FS3jRE+WnR1Rw2sLHL9gFKAtni2ESf62lgiVvW1tlsm/SHtevor6Gl8uzJ+d9R2rV+CQ+gXEvjqlFA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj",
+  "projectFilePath": "C:\\Users\\diogo\\OneDrive\\Documentos\\Projetos\\minimal-api\\minimal-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
