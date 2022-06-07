@@ -11,7 +11,7 @@ var sqlConBuilder = new SqlConnectionStringBuilder();
 
 sqlConBuilder.ConnectionString = builder.Configuration.GetConnectionString("SqlDbConnection");
 sqlConBuilder.UserID = builder.Configuration["UserId"];
-sqlConBuilder.Password = builder.Configuration["UserId"];
+sqlConBuilder.Password = builder.Configuration["Password"];
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(sqlConBuilder.ConnectionString));
 
