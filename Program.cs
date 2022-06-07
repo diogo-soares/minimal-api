@@ -1,8 +1,10 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using minimal_api.Data;
 using minimal_api.Dtos;
+using minimal_api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,8 +34,31 @@ app.UseHttpsRedirection();
 
 app.MapGet("api/v1/commands", async (ICommandRepo repo, IMapper mapper) =>
 {
-    var command = await repo.GetAllCommands();
-    return Results.Ok(mapper.Map<IEnumerable<CommandReadDto>>(command));
+    var commands = await repo.GetAllCommands();
+    return Results.Ok(mapper.Map<IEnumerable<CommandReadDto>>(commands));
+});
+
+
+app.MapGet("api/v1/commands/{id}", async (ICommandRepo repo, IMapper mapper, int id) =>
+{
+    var command = await repo.GetCommandById(id);
+    if (command != null)
+    {
+        return Results.Ok(mapper.Map<CommandReadDto>(command));
+    }
+    return Results.NotFound();
+});
+
+app.MapPost("api/v1/commands", async (ICommandRepo repo, IMapper mapper, CommandCreateDto cmdCreateDto) =>
+{
+    var commandModel = mapper.Map<Command>(cmdCreateDto);
+
+    await repo.CreateCommand(commandModel);
+    await repo.SaveChanges();
+
+    var cmdReadDto = mapper.Map<CommandReadDto>(commandModel);
+
+    return Results.Created($"api/v1/commands/{cmdReadDto.Id}", cmdReadDto);
 });
 
 app.Run();
